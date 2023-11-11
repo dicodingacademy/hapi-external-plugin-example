@@ -1,3 +1,4 @@
+var path = require('path');
 const Hapi = require('@hapi/hapi');
 const Vision = require('@hapi/vision');
 const Handlebars = require('handlebars');
@@ -14,7 +15,7 @@ const init = async () => {
     engines: {
       hbs: Handlebars
     },
-    path: __dirname + '/views',
+    path: path.join('views')
   })
 
   server.route({

@@ -1,7 +1,7 @@
-var path = require('path');
 const Hapi = require('@hapi/hapi');
 const Vision = require('@hapi/vision');
 const Handlebars = require('handlebars');
+const path = require('path');
 
 const init = async () => {
   const server = Hapi.Server({
